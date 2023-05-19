@@ -24,11 +24,19 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/semi': ['error', 'always'],
     '@typescript-eslint/member-delimiter-style': 'off',
+    "space-before-function-paren": "off",
     semi: ['error', 'always'],
     '@typescript-eslint/no-floating-promises': 'off',
     '@typescript-eslint/brace-style': 'off',
     indent: ['error', 'tab'],
+    'indent': 'off',
     'no-tabs': 0,
-    'space-before-function-paren': ['error', 'always'],
+    "prettier/prettier": [
+      "error",
+      {
+        "space-before-function-paren": ["error", "off"],
+        "endOfLine": "auto"
+      }
+    ]
   },
 };
