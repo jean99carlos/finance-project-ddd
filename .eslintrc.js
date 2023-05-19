@@ -7,6 +7,7 @@ module.exports = {
   },
   plugins: ['@typescript-eslint/eslint-plugin'],
   extends: [
+    'prettier',
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
   ],
@@ -21,5 +22,13 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/semi': ['error', 'always'],
+    '@typescript-eslint/member-delimiter-style': 'off',
+    semi: ['error', 'always'],
+    '@typescript-eslint/no-floating-promises': 'off',
+    '@typescript-eslint/brace-style': 'off',
+    indent: ['error', 'tab'],
+    'no-tabs': 0,
+    'space-before-function-paren': ['error', 'always'],
   },
 };
